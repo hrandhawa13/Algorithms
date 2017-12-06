@@ -44,13 +44,13 @@ public class CarFineCalculator{
       String temp = "";
       int count = 0;
       numTestCases = Integer.parseInt(in.nextLine());
-		do{
+      do{
          temp = in.nextLine() +" ";//get N and date
          temp += in.nextLine() + " ";//get the n cars
          temp += in.nextLine() + " "; //get the n fines
          input.add(temp);
          count++;
-		}while ( count < numTestCases );
+	}while ( count < numTestCases );
       in.close();
    }
    public static void process(){
