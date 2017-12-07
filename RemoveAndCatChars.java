@@ -1,5 +1,7 @@
-# Amazon
+
 /*
+# Amazon
+
 Problem from https://practice.geeksforgeeks.org/problems/remove-common-characters-and-concatenate/0
 
 Description:
