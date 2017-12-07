@@ -54,8 +54,6 @@ public class CarFineCalculator{
       in.close();
    }
    public static void process(){
-      String cars = "";
-      String fines = "";
       String[] arr;
       for ( int i = 0; i < input.size(); i++ ){
          arr = input.get(i).split(" ");
@@ -70,10 +68,10 @@ public class CarFineCalculator{
       int fine = 0;
       for ( int i = 2 ; i < 2+numCars; i++){
          carNum = Integer.parseInt(arr[i]);
-         if ( carNum %2 == 0 && !dateEven ){//car number and date are even 
+         if ( carNum %2 == 0 && !dateEven ){//car number is even and date is odd
             fine += Integer.parseInt(arr[i + numCars ] );
          }
-         else if ( carNum %2 == 1 && dateEven ){//car number and date are even 
+         else if ( carNum %2 == 1 && dateEven ){//car number is odd and date is even 
             fine += Integer.parseInt(arr[i + numCars] );
          }
       }
